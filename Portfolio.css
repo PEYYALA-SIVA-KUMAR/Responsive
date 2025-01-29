@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#Alex a {
+    color: brown;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#Navbar {
+    display: flex;
+    gap: 20px;
+}
+
+#Navbar div a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#Navbar div a:hover {
+    color: brown;
+    border-bottom: 2px solid brown;
+}
+
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.profile img {
+    width: 350px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.intro {
+    max-width: 500px;
+    text-align: center;
+    color: white;
+}
+
+.intro h1, .intro h2 {
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: brown;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: brown;
+    border: 2px solid brown;
+    background: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background: brown;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile img {
+        margin-bottom: 20px;
+        width: 250px;
+    }
+}
